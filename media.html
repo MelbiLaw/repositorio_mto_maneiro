@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calcúlo de médias</h1>
+    <br>
+       <div id="aluno"></div>
+       <div id="professor"></div>
+       <div id="media"></div>
+       <div id="nota1"></div>
+       <div id="nota2"></div>
+       <div id="nota3"></div>
+<script>
+    let aluno=prompt("informe o nome do aluno");
+    let professor=prompt("informe o nome do professor");
+    let nota1=Number(prompt("informe a primeira nota"));
+    let nota2=Number(prompt("informe a segunda nota"));
+    let nota3=Number(prompt("informe a terceira nota"));
+    let media=(nota1+nota2+nota3)/3;
+    let situacao;
+    let resultado=""
+
+    if(media<4)
+    {
+        situacao="reprovado"
+    }
+    else
+    {
+        situacao="aprovado"
+    }
+            
+            document.getElementById("aluno").innerHTML = "aluno : " + aluno;
+            document.getElementById("nota1").innerHTML = "nota1 : " + nota1;
+            document.getElementById("nota2").innerHTML = "nota2 : " + nota2;
+            document.getElementById("nota3").innerHTML = "nota3 : " + nota3;
+            document.getElementById("professor").innerHTML = "professor: " + professor;
+            document.getElementById("media").innerHTML = "media: " + media;
+
+</script>
+</body>
+</html>
